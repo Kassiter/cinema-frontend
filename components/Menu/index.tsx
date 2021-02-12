@@ -10,6 +10,7 @@ const Menu = () => {
           <Link href="/">Home</Link>
           <Link href="/search">Search</Link>
           <Link href="/login">Login</Link>
+          <Link href="/register">Register</Link>
         </Nav>
         <Form inline>
           <FormControl type="text" placeholder="Search" className="mr-sm-2" />
