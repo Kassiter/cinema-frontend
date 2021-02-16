@@ -6,16 +6,12 @@ const RegisterLoginTab = () => {
   const router = useRouter()
   return (
     <>
-      <Nav fill variant="tabs" defaultActiveKey="/home">
-        <Nav.Item>
-          <Nav.Link>
-            <Link href="/login">Login</Link>
-          </Nav.Link>
+      <Nav fill variant="tabs">
+        <Nav.Item className={router.route === "/login" ? "active" : ""}>
+          <Link href="/login">Login</Link>
         </Nav.Item>
-        <Nav.Item>
-          <Nav.Link>
-            <Link href="/register">Register</Link>
-          </Nav.Link>
+        <Nav.Item className={router.route === "/register" ? "active" : ""}>
+          <Link href="/register">Register</Link>
         </Nav.Item>
       </Nav>
     </>
